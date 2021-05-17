@@ -43,7 +43,6 @@ namespace Eventick
             this.cbbTipo = new System.Windows.Forms.ComboBox();
             this.picAPie = new System.Windows.Forms.PictureBox();
             this.picEnBici = new System.Windows.Forms.PictureBox();
-            this.toggPieBici = new JCS.ToggleSwitch();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.panelNavegacion = new System.Windows.Forms.Panel();
             this.picUser = new System.Windows.Forms.PictureBox();
@@ -64,7 +63,7 @@ namespace Eventick
             this.btnMessages = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.toggPruebaPaneles = new JCS.ToggleSwitch();
+            this.btnCargarAct = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picDistancia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trbDistancia)).BeginInit();
@@ -98,9 +97,8 @@ namespace Eventick
             this.panel2.Controls.Add(this.cbbTipo);
             this.panel2.Controls.Add(this.picAPie);
             this.panel2.Controls.Add(this.picEnBici);
-            this.panel2.Controls.Add(this.toggPieBici);
             this.panel2.Location = new System.Drawing.Point(18, 98);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(213, 563);
             this.panel2.TabIndex = 2;
@@ -132,7 +130,6 @@ namespace Eventick
             // picDistancia
             // 
             this.picDistancia.BackColor = System.Drawing.Color.Transparent;
-            this.picDistancia.Image = global::PruebaEventick.Properties.Resources.ruta;
             this.picDistancia.Location = new System.Drawing.Point(13, 183);
             this.picDistancia.Name = "picDistancia";
             this.picDistancia.Size = new System.Drawing.Size(45, 42);
@@ -263,24 +260,11 @@ namespace Eventick
             this.picEnBici.TabIndex = 8;
             this.picEnBici.TabStop = false;
             // 
-            // toggPieBici
-            // 
-            this.toggPieBici.AnimationInterval = 5;
-            this.toggPieBici.AnimationStep = 1;
-            this.toggPieBici.BackColor = System.Drawing.Color.Transparent;
-            this.toggPieBici.Location = new System.Drawing.Point(77, 13);
-            this.toggPieBici.Name = "toggPieBici";
-            this.toggPieBici.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggPieBici.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggPieBici.Size = new System.Drawing.Size(50, 19);
-            this.toggPieBici.Style = JCS.ToggleSwitch.ToggleSwitchStyle.IOS5;
-            this.toggPieBici.TabIndex = 7;
-            // 
             // picLogo
             // 
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
             this.picLogo.Location = new System.Drawing.Point(35, 8);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(2);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(214, 39);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -297,7 +281,7 @@ namespace Eventick
             this.panelNavegacion.Controls.Add(this.txtBuscar);
             this.panelNavegacion.Controls.Add(this.picLogo);
             this.panelNavegacion.Location = new System.Drawing.Point(2, 33);
-            this.panelNavegacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelNavegacion.Margin = new System.Windows.Forms.Padding(2);
             this.panelNavegacion.Name = "panelNavegacion";
             this.panelNavegacion.Size = new System.Drawing.Size(1287, 65);
             this.panelNavegacion.TabIndex = 4;
@@ -322,7 +306,7 @@ namespace Eventick
             this.picBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBuscar.Image = ((System.Drawing.Image)(resources.GetObject("picBuscar.Image")));
             this.picBuscar.Location = new System.Drawing.Point(968, 17);
-            this.picBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.picBuscar.Name = "picBuscar";
             this.picBuscar.Size = new System.Drawing.Size(28, 25);
             this.picBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -333,7 +317,7 @@ namespace Eventick
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(338, 15);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(660, 29);
             this.txtBuscar.TabIndex = 0;
@@ -348,7 +332,7 @@ namespace Eventick
             this.panelBorde.Controls.Add(this.picSalir);
             this.panelBorde.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBorde.Location = new System.Drawing.Point(0, 0);
-            this.panelBorde.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelBorde.Margin = new System.Windows.Forms.Padding(2);
             this.panelBorde.Name = "panelBorde";
             this.panelBorde.Size = new System.Drawing.Size(1235, 29);
             this.panelBorde.TabIndex = 5;
@@ -373,7 +357,7 @@ namespace Eventick
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(9, 6);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(19, 20);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -387,7 +371,7 @@ namespace Eventick
             this.picMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picMinimizar.Image")));
             this.picMinimizar.Location = new System.Drawing.Point(1168, 2);
-            this.picMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.picMinimizar.Name = "picMinimizar";
             this.picMinimizar.Size = new System.Drawing.Size(19, 20);
             this.picMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -402,7 +386,7 @@ namespace Eventick
             this.picMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("picMaximizar.Image")));
             this.picMaximizar.Location = new System.Drawing.Point(1191, 2);
-            this.picMaximizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMaximizar.Margin = new System.Windows.Forms.Padding(2);
             this.picMaximizar.Name = "picMaximizar";
             this.picMaximizar.Size = new System.Drawing.Size(19, 20);
             this.picMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -417,7 +401,7 @@ namespace Eventick
             this.picSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picSalir.Image = ((System.Drawing.Image)(resources.GetObject("picSalir.Image")));
             this.picSalir.Location = new System.Drawing.Point(1214, 2);
-            this.picSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picSalir.Margin = new System.Windows.Forms.Padding(2);
             this.picSalir.Name = "picSalir";
             this.picSalir.Size = new System.Drawing.Size(19, 20);
             this.picSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -575,18 +559,15 @@ namespace Eventick
             this.button2.Text = "    Perfil";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // toggPruebaPaneles
+            // btnCargarAct
             // 
-            this.toggPruebaPaneles.AnimationStep = 1;
-            this.toggPruebaPaneles.BackColor = System.Drawing.Color.Transparent;
-            this.toggPruebaPaneles.Location = new System.Drawing.Point(950, 119);
-            this.toggPruebaPaneles.Name = "toggPruebaPaneles";
-            this.toggPruebaPaneles.OffFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggPruebaPaneles.OnFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toggPruebaPaneles.Size = new System.Drawing.Size(50, 19);
-            this.toggPruebaPaneles.Style = JCS.ToggleSwitch.ToggleSwitchStyle.IOS5;
-            this.toggPruebaPaneles.TabIndex = 21;
-            this.toggPruebaPaneles.CheckedChanged += new JCS.ToggleSwitch.CheckedChangedDelegate(this.toggPruebaPaneles_CheckedChanged);
+            this.btnCargarAct.Location = new System.Drawing.Point(912, 134);
+            this.btnCargarAct.Name = "btnCargarAct";
+            this.btnCargarAct.Size = new System.Drawing.Size(75, 23);
+            this.btnCargarAct.TabIndex = 27;
+            this.btnCargarAct.Text = "Cargar Act";
+            this.btnCargarAct.UseVisualStyleBackColor = true;
+            this.btnCargarAct.Click += new System.EventHandler(this.toggPruebaPaneles_CheckedChanged);
             // 
             // FrmActPpal
             // 
@@ -594,17 +575,17 @@ namespace Eventick
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(1235, 673);
+            this.Controls.Add(this.btnCargarAct);
             this.Controls.Add(this.btnEvento);
             this.Controls.Add(this.panelUser);
             this.Controls.Add(this.btnActividad);
-            this.Controls.Add(this.toggPruebaPaneles);
             this.Controls.Add(this.flpNoticias);
             this.Controls.Add(this.panelBorde);
             this.Controls.Add(this.panelNavegacion);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmActPpal";
             this.Text = "Eventick";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -643,7 +624,6 @@ namespace Eventick
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picBuscar;
         private System.Windows.Forms.FlowLayoutPanel flpNoticias;
-        private JCS.ToggleSwitch toggPieBici;
         private System.Windows.Forms.ComboBox cbbTipo;
         private System.Windows.Forms.PictureBox picAPie;
         private System.Windows.Forms.PictureBox picEnBici;
@@ -655,7 +635,6 @@ namespace Eventick
         private System.Windows.Forms.ComboBox cbbTiempo;
         private System.Windows.Forms.PictureBox picDistancia;
         private System.Windows.Forms.Label lblDistancia;
-        private JCS.ToggleSwitch toggPruebaPaneles;
         private System.Windows.Forms.Button btnActividad;
         private System.Windows.Forms.Button btnEvento;
         private System.Windows.Forms.Button button1;
@@ -666,6 +645,7 @@ namespace Eventick
         private System.Windows.Forms.Button btnMessages;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCargarAct;
     }
 }
 

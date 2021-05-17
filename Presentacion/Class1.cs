@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Presentacion
+namespace Dominio
 {
     public class Class1
     {

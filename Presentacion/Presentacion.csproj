@@ -48,9 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actividad.cs" />
+    <Compile Include="Administradores.cs" />
     <Compile Include="Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Cache\AdminLoginCache.cs" />
+    <Compile Include="Cache\UserLoginCache.cs" />
     <Compile Include="CambiarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,24 +62,29 @@
       <DependentUpon>CambiarContraseña.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="ConexionBD.cs" />
     <Compile Include="CrearCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CrearCuenta.designer.cs">
       <DependentUpon>CrearCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Elemento_a_ofrecer.cs" />
+    <Compile Include="Eventos.cs" />
     <Compile Include="FrmActPpal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmActPpal.designer.cs">
       <DependentUpon>FrmActPpal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Herramientas.cs" />
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InicioSesion.designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="PantallaCarga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,20 +105,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
-      <Project>{d1b3eb13-c77f-41cb-9824-06758d8a10e5}</Project>
-      <Name>AccesoDatos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Comun\Comun.csproj">
-      <Project>{08a210c6-0d2b-4a73-8d91-0ce7dd7fbf0d}</Project>
-      <Name>Comun</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Dominio\Dominio.csproj">
-      <Project>{5ed0d8fc-24b6-49db-9184-e6a4aafaf900}</Project>
-      <Name>Dominio</Name>
-    </ProjectReference>
+    <Compile Include="Usuarios.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CambiarContraseña.resx">
@@ -134,6 +130,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Presentacion.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
@@ -149,6 +146,32 @@
     <Content Include="1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="bin\Debug\1.gif" />
+    <Content Include="bin\Debug\AccesoDatos.dll" />
+    <Content Include="bin\Debug\AccesoDatos.pdb" />
+    <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\Debug\Comun.dll" />
+    <Content Include="bin\Debug\Comun.pdb" />
+    <Content Include="bin\Debug\Dominio.dll" />
+    <Content Include="bin\Debug\Dominio.pdb" />
+    <Content Include="bin\Debug\Google.Protobuf.dll" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.dll" />
+    <Content Include="bin\Debug\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="bin\Debug\K4os.Hash.xxHash.dll" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\MySql.Data.xml" />
+    <Content Include="bin\Debug\Presentacion.exe" />
+    <Content Include="bin\Debug\Presentacion.pdb" />
+    <Content Include="bin\Debug\Renci.SshNet.dll" />
+    <Content Include="bin\Debug\System.Buffers.dll" />
+    <Content Include="bin\Debug\System.Memory.dll" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Debug\Ubiety.Dns.Core.dll" />
+    <Content Include="bin\Debug\Zstandard.Net.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
