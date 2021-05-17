@@ -48,7 +48,6 @@ namespace Eventick
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblNickname = new System.Windows.Forms.Label();
-            this.btnRegistrarse = new ePOSOne.btnProduct.Button_WOC();
             ((System.ComponentModel.ISupportInitialize)(this.picFondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCerrar)).BeginInit();
@@ -258,26 +257,6 @@ namespace Eventick
             // 
             // btnRegistrarse
             // 
-            this.btnRegistrarse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(202)))), ((int)(((byte)(197)))));
-            this.btnRegistrarse.BorderColor = System.Drawing.Color.Silver;
-            this.btnRegistrarse.ButtonColor = System.Drawing.Color.YellowGreen;
-            this.btnRegistrarse.FlatAppearance.BorderSize = 0;
-            this.btnRegistrarse.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.btnRegistrarse.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarse.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnRegistrarse.Location = new System.Drawing.Point(840, 590);
-            this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btnRegistrarse.OnHoverButtonColor = System.Drawing.Color.Empty;
-            this.btnRegistrarse.OnHoverTextColor = System.Drawing.Color.Empty;
-            this.btnRegistrarse.Size = new System.Drawing.Size(158, 48);
-            this.btnRegistrarse.TabIndex = 7;
-            this.btnRegistrarse.Text = "Registrarse";
-            this.btnRegistrarse.TextColor = System.Drawing.Color.Black;
-            this.btnRegistrarse.UseVisualStyleBackColor = false;
-            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
             // 
             // CrearCuenta
             // 
@@ -294,7 +273,6 @@ namespace Eventick
             this.Controls.Add(this.picMinimizar);
             this.Controls.Add(this.picReajustar);
             this.Controls.Add(this.picCerrar);
-            this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.txtConfirmarContraseña);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtEmail);
@@ -329,7 +307,6 @@ namespace Eventick
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtConfirmarContraseña;
-        private ePOSOne.btnProduct.Button_WOC btnRegistrarse;
         private System.Windows.Forms.PictureBox picCerrar;
         private System.Windows.Forms.PictureBox picReajustar;
         private System.Windows.Forms.PictureBox picMinimizar;

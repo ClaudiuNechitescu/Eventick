@@ -11,17 +11,17 @@ namespace Eventick
     static class Herramientas
     {
 
-        public static void CambiarColor(ePOSOne.btnProduct.Button_WOC obj)
-        {
-            Color color = Color.FromArgb(217, 217, 217);
-            obj.ButtonColor = Color.YellowGreen;
-            obj.BorderColor = Color.YellowGreen;
-            obj.OnHoverBorderColor = Color.Transparent;
-            obj.FlatAppearance.BorderColor = color;
-            obj.FlatAppearance.MouseDownBackColor = color;
-            obj.FlatAppearance.MouseOverBackColor = color;
-            obj.TextColor = Color.Black;
-        }
+        //public static void CambiarColor(Eventick.RoundButton obj)
+        //{
+        //    Color color = Color.FromArgb(217, 217, 217);
+        //    obj.ButtonColor = Color.YellowGreen;
+        //    obj.BorderColor = Color.YellowGreen;
+        //    obj.OnHoverBorderColor = Color.Transparent;
+        //    obj.FlatAppearance.BorderColor = color;
+        //    obj.FlatAppearance.MouseDownBackColor = color;
+        //    obj.FlatAppearance.MouseOverBackColor = color;
+        //    obj.TextColor = Color.Black;
+        //}
 
 
     }

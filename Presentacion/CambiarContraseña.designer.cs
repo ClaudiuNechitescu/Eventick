@@ -42,7 +42,6 @@ namespace Eventick
             this.lblusuario_correo = new System.Windows.Forms.Label();
             this.lblcontraseña = new System.Windows.Forms.Label();
             this.lblNuevaContraseña = new System.Windows.Forms.Label();
-            this.btnCambiarContraseña = new ePOSOne.btnProduct.Button_WOC();
             ((System.ComponentModel.ISupportInitialize)(this.picFondo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAtras)).BeginInit();
             this.panelBarranav.SuspendLayout();
@@ -192,33 +191,12 @@ namespace Eventick
             // 
             // btnCambiarContraseña
             // 
-            this.btnCambiarContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(200)))), ((int)(((byte)(194)))));
-            this.btnCambiarContraseña.BorderColor = System.Drawing.Color.YellowGreen;
-            this.btnCambiarContraseña.ButtonColor = System.Drawing.Color.YellowGreen;
-            this.btnCambiarContraseña.FlatAppearance.BorderSize = 0;
-            this.btnCambiarContraseña.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightGray;
-            this.btnCambiarContraseña.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnCambiarContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCambiarContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCambiarContraseña.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCambiarContraseña.Location = new System.Drawing.Point(685, 561);
-            this.btnCambiarContraseña.Name = "btnCambiarContraseña";
-            this.btnCambiarContraseña.OnHoverBorderColor = System.Drawing.Color.Empty;
-            this.btnCambiarContraseña.OnHoverButtonColor = System.Drawing.Color.Empty;
-            this.btnCambiarContraseña.OnHoverTextColor = System.Drawing.Color.Empty;
-            this.btnCambiarContraseña.Size = new System.Drawing.Size(237, 39);
-            this.btnCambiarContraseña.TabIndex = 26;
-            this.btnCambiarContraseña.Text = "Cambiar contraseña";
-            this.btnCambiarContraseña.TextColor = System.Drawing.Color.Black;
-            this.btnCambiarContraseña.UseVisualStyleBackColor = false;
-            this.btnCambiarContraseña.Click += new System.EventHandler(this.btnCambiarContraseña_Click);
             // 
             // CambiarContraseña
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1380, 738);
-            this.Controls.Add(this.btnCambiarContraseña);
             this.Controls.Add(this.lblNuevaContraseña);
             this.Controls.Add(this.lblcontraseña);
             this.Controls.Add(this.lblusuario_correo);
@@ -262,6 +240,5 @@ namespace Eventick
         private System.Windows.Forms.Label lblusuario_correo;
         private System.Windows.Forms.Label lblcontraseña;
         private System.Windows.Forms.Label lblNuevaContraseña;
-        private ePOSOne.btnProduct.Button_WOC btnCambiarContraseña;
     }
 }

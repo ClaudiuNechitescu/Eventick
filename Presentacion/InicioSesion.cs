@@ -18,8 +18,8 @@ namespace Eventick
 
         private void frmLogIn_Load(object sender, EventArgs e)
         {
-            Herramientas.CambiarColor(btnIniciarSesion);
-            Herramientas.CambiarColor(btnRegistrarse);
+            //Herramientas.CambiarColor(btnIniciarSesion);
+            //Herramientas.CambiarColor(btnRegistrarse);
 
         }
 
