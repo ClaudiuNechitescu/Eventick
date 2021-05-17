@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ePOSOne.btnProduct
+namespace Eventick
 {
-    public class Button_WOC : Button
+    public class RoundButton : Button
     {
         private Color _borderColor = Color.Silver;
         private Color _onHoverBorderColor = Color.Gray;
@@ -18,7 +18,7 @@ namespace ePOSOne.btnProduct
         private int _borderThicknessByTwo = 3;
                       
 
-        public Button_WOC()
+        public RoundButton()
         {
             DoubleBuffered = true;
             MouseEnter += (sender, e) =>

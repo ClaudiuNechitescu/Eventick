@@ -67,7 +67,7 @@ namespace Eventick
 
             foreach (char caracter in email)
             {
-                if (email.Length > 12)
+                if (email.Length > 12 && email.Contains("@"))
                 {
                     consulta = String.Format("SELECT * FROM admin WHERE email='{0}'", email);
                 }

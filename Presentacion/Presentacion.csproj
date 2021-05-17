@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="Actividad.cs" />
     <Compile Include="Administradores.cs" />
-    <Compile Include="Button_WOC.cs">
+    <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Cache\AdminLoginCache.cs" />
