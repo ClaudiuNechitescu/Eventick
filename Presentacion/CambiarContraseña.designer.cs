@@ -108,7 +108,7 @@ namespace Eventick
             // picCerrar
             // 
             this.picCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picCerrar.Image = global::Eventick.Properties.Resources.iconfinder_circle_cross_226589;
+            this.picCerrar.Image = ((System.Drawing.Image)(resources.GetObject("picCerrar.Image")));
             this.picCerrar.Location = new System.Drawing.Point(1330, 4);
             this.picCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.picCerrar.Name = "picCerrar";
@@ -121,7 +121,7 @@ namespace Eventick
             // picReajustar
             // 
             this.picReajustar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picReajustar.Image = global::Eventick.Properties.Resources.iconfinder_minimize_2_3324969;
+            this.picReajustar.Image = ((System.Drawing.Image)(resources.GetObject("picReajustar.Image")));
             this.picReajustar.Location = new System.Drawing.Point(1304, 4);
             this.picReajustar.Margin = new System.Windows.Forms.Padding(2);
             this.picReajustar.Name = "picReajustar";
@@ -133,7 +133,7 @@ namespace Eventick
             // 
             // picMinimizar
             // 
-            this.picMinimizar.Image = global::Eventick.Properties.Resources.iconfinder_minus_circle_2561243;
+            this.picMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picMinimizar.Image")));
             this.picMinimizar.Location = new System.Drawing.Point(1278, 4);
             this.picMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.picMinimizar.Name = "picMinimizar";

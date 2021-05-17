@@ -34,7 +34,7 @@
     <StartupObject>Eventick.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -137,12 +137,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Captura-removebg-preview%282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iconfinder_circle-cross_226589.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -169,9 +163,16 @@
     <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
     <Content Include="bin\Debug\Ubiety.Dns.Core.dll" />
     <Content Include="bin\Debug\Zstandard.Net.dll" />
+    <None Include="Resources\reajustarmin.png" />
+    <None Include="Resources\minimizar.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\cerrar.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

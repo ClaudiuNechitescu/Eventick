@@ -123,6 +123,7 @@ namespace Eventick
             // picCerrar
             // 
             this.picCerrar.BackColor = System.Drawing.Color.Gainsboro;
+            this.picCerrar.Image = ((System.Drawing.Image)(resources.GetObject("picCerrar.Image")));
             this.picCerrar.Location = new System.Drawing.Point(1330, 3);
             this.picCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.picCerrar.Name = "picCerrar";
@@ -135,6 +136,7 @@ namespace Eventick
             // picReajustar
             // 
             this.picReajustar.BackColor = System.Drawing.Color.Gainsboro;
+            this.picReajustar.Image = ((System.Drawing.Image)(resources.GetObject("picReajustar.Image")));
             this.picReajustar.Location = new System.Drawing.Point(1304, 3);
             this.picReajustar.Margin = new System.Windows.Forms.Padding(2);
             this.picReajustar.Name = "picReajustar";
@@ -147,6 +149,7 @@ namespace Eventick
             // picMinimizar
             // 
             this.picMinimizar.BackColor = System.Drawing.Color.Gainsboro;
+            this.picMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picMinimizar.Image")));
             this.picMinimizar.Location = new System.Drawing.Point(1278, 3);
             this.picMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.picMinimizar.Name = "picMinimizar";

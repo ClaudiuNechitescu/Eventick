@@ -62,12 +62,12 @@ namespace Eventick
             if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
-                picReajustar.Image = Image.FromFile(@"..\..\img\max.png");
+                picReajustar.Image = Image.FromFile(@"..\..\..\Iconos\maximizar.png");
             }
             else
             {
                 this.WindowState = FormWindowState.Maximized;
-                picReajustar.Image = Image.FromFile(@"..\..\img\min.png");
+                picReajustar.Image = Image.FromFile(@"..\..\..\Iconos\maximizar2.png");
             }
         }
 
